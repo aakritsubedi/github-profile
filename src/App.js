@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
+
+import Router from 'components/Router';
+
+import 'assets/css/style.css';
 
 function App() {
   return (
-    <div>
-      <h1>Youtuber Profile</h1>
-    </div>
+    <Router />
   );
 }
 
