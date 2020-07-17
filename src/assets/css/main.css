@@ -4,18 +4,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #ff6347;
+  background: #6f95e7;
   background-image: url('../images/emoji.png');
   background-repeat: repeat-x;
   background-position: bottom;
 }
-.main-yt-logo {
-  height: 150px;
-  margin-top: -100px;
+.main-profile-logo {
+  height: 240px;
+  border-radius: 50%;
+  margin-top: 50px;
 }
 .main-username {
   color: #272727;
-  font-size: 60px;
-  margin-top: 25px;
+  font-size: 45px;
+  margin: 10px 0;
+  font-family: 'Dancing Script', cursive;
+}
+.social-link {
+  color: #272727;
+  margin: 0 3px;
+}
+.social-link:hover {
+  color: #d4d1d1;
 }
