@@ -1,3 +1,5 @@
+export const myGithub = 'aakritsubedi';
+
 export const myInfo = {
   firstName: 'Aakrit',
   lastName: 'Subedi',

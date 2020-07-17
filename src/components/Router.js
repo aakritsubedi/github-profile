@@ -5,6 +5,7 @@ import * as route from "constants/routes";
 
 import Main from "components/Main";
 import Home from "components/Home";
+import MyGithub from "components/MyGithub";
 
 function Router() {
   return (
@@ -12,6 +13,7 @@ function Router() {
       <Switch>
         <Route exact path={route.MAIN} component={Main} />
         <Route path={route.HOME} component={Home} />
+        <Route path={route.GITHUB} component={MyGithub} />
       </Switch>
     </BrowserRouter>
   )

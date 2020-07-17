@@ -1,0 +1,66 @@
+.github-wrapper {
+  width: 90%;
+  margin: 10px auto;
+}
+.github-title{
+  font-size: 28px;
+}
+.my-work {
+  font-size: 18px;
+}
+.github-card {
+  height: 150px;
+  width: 48%;
+  margin: 10px 1%;
+  border: 1px solid #3f3b3b;
+  float: left;
+  border-radius: 4px;
+  position: relative;
+}
+.github-card-body {
+  padding: 10px 25px;
+}
+.github-card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.github-card-desc {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.github-star {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 3px 0;
+  background-color: #211F1F;
+  color: #ffffff;
+  display: none;
+  border-radius: 4px;
+}
+.github-star span {
+  margin: 0 10px;
+}
+.github-star .star-lang {
+  float: right;
+}
+
+.github-card:hover > .github-star {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-work {
+    font-size: 12px;
+  }
+  .github-title{
+    font-size: 20px;
+  }
+  .github-card {
+    height: 125px;
+    width: 100%;
+    margin: 5px 1%;
+    float: left;
+    padding: 10px 25px;
+  }
+}

@@ -1,15 +1,31 @@
-import React from "react";
+import React,  { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import ReactTypingEffect from "react-typing-effect";
 
 import SocialIcon from "components/SocialIcon";
 import { FaMailBulk, FaMapMarkerAlt } from "react-icons/fa";
 
-import { myInfo, whoAmI, techStack, socialMedia } from "constants/myInfo";
+import { GITHUB_PATH } from 'constants/routes';
+import { myInfo, whoAmI, techStack, socialMedia, myGithub } from "constants/myInfo";
 
 import "assets/css/profile.css";
 
+
 function Home() {
+  let history = useHistory();
+  let changePage = timeInMs => {
+    setTimeout(() => {
+      history.push({
+         pathname: GITHUB_PATH + myGithub
+      });
+    }, timeInMs)
+  }
+  
+  useEffect(() => {
+    changePage(15000);
+  });
+
   return (
     <div className="profile-wrapper">
       <h1 className="my-name">
@@ -18,7 +34,7 @@ function Home() {
       <span className="title">
         I am
         <ReactTypingEffect
-          typingDelay="1000ms"
+          typingDelay="500"
           text={whoAmI}
           className="typer"
         />
@@ -37,7 +53,6 @@ function Home() {
           <li key={index}>{tech}</li>
         ))}
       </ul>
-
       <div className="profile-social-icon">
         <ul>
           {socialMedia.map((social, index) => (
