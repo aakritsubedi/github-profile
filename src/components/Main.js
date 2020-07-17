@@ -15,7 +15,7 @@ function Main() {
   let changePage = timeInMs => {
     setTimeout(() => {
       history.push({
-        pathname: HOME_PATH + myInfo.channelId
+        pathname: HOME_PATH + myInfo.firstName
       });
     }, timeInMs)
   }

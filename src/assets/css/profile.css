@@ -1,0 +1,80 @@
+.profile-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6d6c6c;
+}
+.my-name {
+  font-size: 80px;
+  letter-spacing: 0em;
+  font-family: "Dancing Script", cursive;
+}
+.title {
+  font-size: 30px;
+}
+.typer {
+  font-weight: lighter;
+}
+.side-image {
+  object-fit: contain;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.profile-social-icon {
+  position: absolute;
+  bottom: 0;
+  margin: 10px 0;
+}
+
+.profile-social-icon ul {
+  display: inline-block;
+}
+
+.extra-info {
+  margin-top: 25px;
+}
+.extra-info span {
+  display: block;
+  font-size: 20px;
+}
+.extra-info span a{
+  color: inherit;
+  text-decoration: none;
+}
+.tech-stack {
+  width: 30%;
+  padding: 0 5px;
+  list-style: none;
+  margin-top: 25px;
+}
+.tech-stack li {
+  float: left;
+  width: auto;
+  margin: 4px 8px;
+  padding: 4px 8px;
+  border: 1px solid #413e3e;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-name {
+    font-size: 40px;
+  }
+  .title {
+    font-size: 20px;
+    color: #bbbbbb;
+  }
+  .extra-info span {
+    font-size: 16px;
+  }
+  .tech-stack {
+    width: 90%;
+    padding: 0;
+    font-size: 12px;
+  }
+}

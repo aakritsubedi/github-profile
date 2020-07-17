@@ -25,5 +25,14 @@
   margin: 0 3px;
 }
 .social-link:hover {
-  color: #d4d1d1;
+  color: #8b8a8a;
+}
+.icon {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .icon {
+    font-size: 12px;
+  }
 }

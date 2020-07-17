@@ -1,31 +1,29 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-import * as size from 'constants/iconSize';
-
 import 'assets/css/main.css';
 
 function SocialIcon(props) {
   let getIcon = title => {
     switch(title) {
       case 'facebook':
-        return <FaFacebookF size={size.lg}/>
+        return <FaFacebookF className='icon'/>
       case 'instagram':
-        return <FaInstagram size={size.lg}/>
+        return <FaInstagram className='icon'/>
       case 'youtube':
-        return <FaYoutube size={size.lg}/>
+        return <FaYoutube className='icon'/>
       case 'twitter':
-        return <FaTwitter size={size.lg}/>
+        return <FaTwitter className='icon'/>
       case 'github':
-        return <FaGithub size={size.lg}/> 
+        return <FaGithub className='icon'/> 
       case 'linkedIn':
-        return <FaLinkedinIn size={size.lg}/> 
+        return <FaLinkedinIn className='icon'/> 
     }
   }
 
   return (
     <>
-      <a  href={props.link} target='_blank' className='social-link'>
+      <a  href={props.link} target='_blank' className='social-link' rel="noopener noreferrer">
         {getIcon(props.title)}
       </a>
     </>

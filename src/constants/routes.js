@@ -1,3 +1,3 @@
 export const MAIN = '/';
-export const HOME = '/channel/:channelId';
-export const HOME_PATH = '/channel/';
+export const HOME = '/profile/:name';
+export const HOME_PATH = '/profile/';
