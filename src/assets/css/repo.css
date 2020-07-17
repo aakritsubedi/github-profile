@@ -1,0 +1,50 @@
+.the-repo-card {
+  width: 90%;
+  margin: 10px auto;
+  min-height: 60vh;
+  position: relative;
+}
+.the-repo-desc {
+  margin-top: 25px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.the-repo-star {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 3px 0;
+  background-color: #211F1F;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.the-repo-star span {
+  margin: 0 10px;
+}
+.the-repo-star .star-lang {
+  float: right;
+}
+.extra-info ul {
+  list-style: none;
+  line-height: 25px;
+}
+.extra-info ul li a {
+  color: #211F1F;
+  text-decoration: none;
+}
+.extra-info ul li a:hover {
+  text-decoration: underline;
+} 
+
+@media only screen and (max-width: 600px) {
+  .the-repo-desc {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  .extra-info ul {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 10px 0;
+  }
+}

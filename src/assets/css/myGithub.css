@@ -20,6 +20,13 @@
 .github-card-body {
   padding: 10px 25px;
 }
+.github-card-body a {
+  text-decoration: none;
+  color: #211F1F;
+}
+.github-card-body a:hover {
+  text-decoration: underline;
+}
 .github-card-title {
   font-size: 20px;
   font-weight: bold;
@@ -54,7 +61,7 @@
     font-size: 12px;
   }
   .github-title{
-    font-size: 20px;
+    font-size: 18px;
   }
   .github-card {
     height: 125px;

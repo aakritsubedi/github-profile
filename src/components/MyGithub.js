@@ -36,7 +36,7 @@ function MyGithub() {
         <span className="github-title">{username} / Popular repositories</span>
         <ul className='clearfix'>
           {userRepo.map((repo, index) => (
-            <GithubCard repo={repo} key={index} />
+            <GithubCard repo={repo} key={index} username={username}/>
           ))}
         </ul>
         <br/>
