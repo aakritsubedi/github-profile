@@ -5,7 +5,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: tomato;
+  background: #ff6347;
+  background-image: url('../images/emoji.png');
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
 .main-yt-logo {
   height: 150px;
