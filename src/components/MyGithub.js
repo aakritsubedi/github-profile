@@ -20,7 +20,7 @@ function MyGithub() {
       setUserRepo(repo.data);
     }
     allData();
-  }, []);
+  }, [username]);
 
   return (
     <>
