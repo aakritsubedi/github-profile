@@ -1,5 +1,4 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 
 import ReactTypingEffect from "react-typing-effect";
 
@@ -11,8 +10,6 @@ import { myInfo, whoAmI, techStack, socialMedia } from "constants/myInfo";
 import "assets/css/profile.css";
 
 function Home() {
-  const { name } = useParams();
-
   return (
     <div className="profile-wrapper">
       <h1 className="my-name">

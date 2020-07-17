@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaGithub, FaLinkedinIn, FaGoogle } from 'react-icons/fa';
 
 import 'assets/css/main.css';
 
@@ -18,6 +18,8 @@ function SocialIcon(props) {
         return <FaGithub className='icon'/> 
       case 'linkedIn':
         return <FaLinkedinIn className='icon'/> 
+      default:
+        return <FaGoogle className='icon'/> 
     }
   }
 
