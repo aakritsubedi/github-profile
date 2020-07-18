@@ -36,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "keywords": ["React Portfolio", "Portfolio", "Github API", "Github Profile", "AAkrit Subedi", "React"],
+  "author": "Aakrit Subedi <aakritsubedi9@gmail.com>",
+  "license": "MIT"
 }
