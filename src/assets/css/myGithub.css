@@ -12,7 +12,7 @@
   height: 150px;
   width: 48%;
   margin: 10px 1%;
-  border: 1px solid #3f3b3b;
+  border: 1px solid #e1e4e8;;
   float: left;
   border-radius: 4px;
   position: relative;
@@ -22,7 +22,6 @@
 }
 .github-card-body a {
   text-decoration: none;
-  color: #211F1F;
 }
 .github-card-body a:hover {
   text-decoration: underline;
@@ -61,11 +60,11 @@
     font-size: 12px;
   }
   .github-title{
-    font-size: 18px;
+    font-size: 16px;
   }
   .github-card {
     height: 125px;
-    width: 100%;
+    width: 96%;
     margin: 5px 1%;
     float: left;
     padding: 10px 25px;

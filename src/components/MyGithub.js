@@ -4,9 +4,9 @@ import { useParams } from "react-router-dom";
 import githubAPI from "services/githubAPI";
 
 import GithubCard from "components/GithubCard";
-import SocialIcon from 'components/SocialIcon';
+import MySocialMedia from "components/MySocialMedia";
 
-import { myInfo, socialMedia } from 'constants/myInfo';
+import { myInfo } from 'constants/myInfo';
 
 import "assets/css/myGithub.css";
 
@@ -44,11 +44,7 @@ function MyGithub() {
           <h6>
             {myInfo.firstName} {myInfo.lastName}
           </h6>
-          <ul className='social-icon'>
-            {socialMedia.map((social, index) => (
-              <SocialIcon title={social.title} link={social.link} key={index} />
-            ))}
-          </ul>
+          <MySocialMedia className='social-icon' />
         </div>
       </div>
     </>

@@ -1,13 +1,14 @@
 import React,  { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import ReactTypingEffect from "react-typing-effect";
-
-import SocialIcon from "components/SocialIcon";
 import { FaMailBulk, FaMapMarkerAlt } from "react-icons/fa";
 
+import ReactTypingEffect from "react-typing-effect";
+
+import MySocialMedia from "components/MySocialMedia";
+
 import { GITHUB_PATH } from 'constants/routes';
-import { myInfo, whoAmI, techStack, socialMedia, myGithub } from "constants/myInfo";
+import { myInfo, whoAmI, techStack, myGithub } from "constants/myInfo";
 
 import "assets/css/profile.css";
 
@@ -53,13 +54,7 @@ function Home() {
           <li key={index}>{tech}</li>
         ))}
       </ul>
-      <div className="profile-social-icon">
-        <ul>
-          {socialMedia.map((social, index) => (
-            <SocialIcon title={social.title} link={social.link} key={index} />
-          ))}
-        </ul>
-      </div>
+      <MySocialMedia className='profile-social-icon' />
     </div>
   );
 }

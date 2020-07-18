@@ -3,13 +3,13 @@ import { useParams } from "react-router-dom";
 
 import Moment from "react-moment";
 
-import SocialIcon from "components/SocialIcon";
+import MySocialMedia from "components/MySocialMedia";
 
 import repoAPI from "services/repoAPI";
 
 import { GoRepo, GoStar, GoRepoForked, GoEye, GoMarkGithub, GoRepoPush, GoClock, GoTerminal, GoRepoClone, GoLink, GoGitBranch } from "react-icons/go";
 
-import { myInfo, socialMedia } from "constants/myInfo";
+import { myInfo } from "constants/myInfo";
 
 import "assets/css/repo.css";
 
@@ -71,11 +71,7 @@ function Repo() {
           <h6>
             {myInfo.firstName} {myInfo.lastName}
           </h6>
-          <ul className="social-icon">
-            {socialMedia.map((social, index) => (
-              <SocialIcon title={social.title} link={social.link} key={index} />
-            ))}
-          </ul>
+          <MySocialMedia className='social-icon' />
         </div>
       </div>
     </>
