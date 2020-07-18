@@ -1,7 +1,8 @@
 # MyGithub Profile 👋
-your github profile... 
-- demo: [aakritsubedi.netlify.app](
-aakritsubedi.netlify.app)
+your github profile... <br>
+uses a github API to fetch all you repositories and display statistics of the particular repo 
+
+![Web Demo](github-profile.gif)
 
 ## make your copy
 
@@ -30,6 +31,6 @@ aakritsubedi.netlify.app)
 
 # 💬 
 ##### Hi there, I am AAkrit Subedi 👋
-Email: aakritsubedi9@gmail.com
-website: [aakritsubedi.com.np](aakritsubedi.com.np)
+Email: aakritsubedi9@gmail.com<br>
+Website: [aakritsubedi.com.np](aakritsubedi.com.np)<br>
 Address: Kathmandu, Nepal
